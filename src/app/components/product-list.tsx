@@ -14,7 +14,7 @@ export function ProductList({ products }: { products: Products[] }) {
           {products.map((product, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-11/12 h-[80px] flex items-center overflow-hidden shadow-lg  rounded-lg"
+              className="flex-shrink-0 w-full  h-[80px] flex items-center overflow-hidden shadow-lg  rounded-lg"
             >
               {/* Coffee & Description Section */}
               <div className="flex p-4 border border-gray-300 rounded-l-lg h-ift w-full">
