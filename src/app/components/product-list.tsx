@@ -1,4 +1,11 @@
-export function ProductList({ products }) {
+type Products = {
+  image: string;
+    name: string;
+    brand: string;
+    expiry: string;
+    points: number;
+}
+export function ProductList({ products }: { products: Products[] }) {
   return (
     <div className="w-full">
       <h2 className="text-lg font-bold mb-4 px-4">상품 구매</h2>
@@ -7,7 +14,7 @@ export function ProductList({ products }) {
           {products.map((product, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full h-[80px] flex items-center overflow-hidden shadow rounded-lg"
+              className="flex-shrink-0 w-11/12 h-[80px] flex items-center overflow-hidden shadow-lg  rounded-lg"
             >
               {/* Coffee & Description Section */}
               <div className="flex p-4 border border-gray-300 rounded-l-lg h-ift w-full">
